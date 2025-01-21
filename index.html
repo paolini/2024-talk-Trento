@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>E. Paolini: Infinite Isoperimetric Partitions (Trento 2024)</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/night.css">
+		<link rel="stylesheet" href="mystyle.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<!-- Enable MathJAX -->
+		<!--script>MathJax = {tex: {inlineMath: [['$', '$']]}};</script>
+		<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script-->
+		<!--script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script-->		
+	</head>
+	<body>
+		<!--
+			color to alpha with imagemagik:
+
+		convert prova.png \( -clone 0 -fill "#a010101" -colorize 100 \) \( -clone 0,1 -compose difference -composite -separate +channel -evaluate-sequence max -auto-level \) -delete 1 -alpha off -compose over -compose copy_opacity -composite out.png
+		-->
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2><b>infinite <br> isoperimetric <br> partitions</b></h2>
+					<h4></h4>
+					<h4>[E. Paolini: Università di Pisa]</h4>
+					<h4></h4>
+					<h3>Trento &dash; Feb 28, 2023</h3>
+				</section>
+				<section>
+				<h4>Plan</h4>
+					<ul>
+						<li>the classical Steiner Problem</li>
+						<li>generalization to infinite sets</li>
+						<li>minimality of the infinite self-similar complete binary tree</li>
+					</ul>
+				</section>
+				<section>
+					<h4>
+						Images
+					</h4>
+					<div class="r-stack">
+						<img src="slide1.png">
+						<img class="fragment" src="slide2.png">
+					</div>
+				</section>
+				<section>
+					<h4>Images</h4>
+					<img height="200" src="image.png">
+					<div>
+						(a)
+						<img style="vertical-align: middle;" class="fragment" height="200" src="slide1.png">
+						&nbsp;
+						&nbsp;
+						(b)
+						<img style="vertical-align: middle;" class="fragment" height="200" src="slide2.png">
+						&nbsp;
+						&nbsp;
+						(c)
+						<img style="vertical-align: middle;" class="fragment" height="200" src="slide3.png">
+					</div>
+				</section>
+				<section>
+					<img class="center" src="tree.png" height=500>
+					<div class="fragment">
+						<b>thank you!</b>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>
