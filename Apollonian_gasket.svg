@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1e3" height="1e3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
- <g fill="#fff" stroke="#000" stroke-width="3">
+<svg width="1000" height="1002" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g stroke="#fff" fill="#111" stroke-width="3">
   <circle cx="500" cy="500" r="500"/>
   <circle cx="500" cy="500" r="35.898"/>
-  <g id="a" fill="#fff">
+  <g id="a" >
    <circle cx="500" cy="767.95" r="232.05"/>
    <circle cx="836.01" cy="694" r="112"/>
    <circle cx="543.71" cy="525.23" r="14.569"/>

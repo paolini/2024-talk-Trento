@@ -44,14 +44,14 @@
 					</p>
 				</section>
 				<section>
-				<h4>Partition of the talk</h4>
+				<h4>Plan</h4>
 					<ol style="margin-right: 300px">
 						<li>
 							<b>infinite isoperimetric clusters</b><br>
 							<small>(M. Novaga - E. P. - E. Stepanov - V. M. Tortorelli)<br>
 							published on <i>networks and heterogeneous media</i></small>
 							<img 
-								style="position: absolute; top: 10px; right: 100px; filter: invert(1);"
+								style="position: absolute; top: 10px; right: 100px; filter_: invert(1);"
 								src="Apollonian_gasket.svg" 
 								height=150
 							>
@@ -70,6 +70,85 @@
 							<img style="position: absolute; top: 300px; right: 10px;" src="tiling.png" height=150>
 						</li>
 					</ol>
+				</section>
+				<section>
+					<h3><b>Part 1.</b><br>infinite isoperimetric clusters</h3>
+					<small>
+						(M. Novaga - E. P. - E. Stepanov - V. M. Tortorelli)<br>
+						published on <i>networks and heterogeneous media</i>
+					</small>
+					<img 
+						style="position:absolute;right: -50px;bottom:-50px;"
+						src="Apollonian_gasket.svg" 
+						height=300
+					>
+					<p>
+						minimize $\displaystyle P(E)= \frac 1 2 \sum_{k=0}^{+\infty} P(E_k)$
+					</p>
+					<p>
+						with fixed $\lvert E_k \rvert$, $k>0$
+					</p>
+				</section>
+				<section>
+					<h3>boundary of an infinite cluster</h3>
+					<p>
+						$$\begin{aligned}
+							\mathbf{E} 
+							&= (E_1,\dots,E_k,\dots), \qquad E_k\subset \mathbb{R}^d
+							\\
+							\partial^* \mathbf E 
+							&= \bigcup_{k=1}^{+\infty} \bigcup_{j=0}^{k-1}\partial^* E_k \cap \partial^* E_j
+							\\
+							\partial \mathbf E 
+							&= \left\{ x\mid
+								\forall \rho\, \exists k\colon
+								0 \lt \lvert E_k\cap B_\rho(x)\rvert \lt \lvert B_\rho(x)\rvert 
+								\right\}\\
+							P(\mathbf E) &= \mathcal{H}^{d-1}(\partial^* \mathbf E)
+						\end{aligned}$$
+					</p>
+				</section>
+				<section>
+					<p><b>Theorem.</b>
+					Given $a_k\gt 0$, $k=1,2,\dots$ such that $\sum \sqrt {a_k} \lt \infty$,
+					there exists a minimal cluster $\mathbf E$ in $\mathbb R^2$ with $\lvert E_k\rvert = a_k$.
+					Moreover $\mathcal H^1(\partial \mathbf E \setminus \partial^* \mathbf E) = 0$.
+					</p>
+				</section>
+				<section>
+					<p><b>proof.</b>
+					$\mathbf E^n$ minimizing for $a_1,\dots,a_n$.
+					<br>
+					Uniform estimate on the diameter of the clusters.
+					<br>
+					$E_k^n \to E_k$, $\quad\mathbf E = (E_1,E_2\dots)$.
+					<br>
+					Blaschke: $\partial \mathbf E^n \to K$.
+					<br>
+					Goła̧b: $\mathcal H^1(K)\le \lim \mathcal H^1(\partial \mathbf E^n)$.
+					Finally 
+					$
+						P(\mathbf E) 
+						= \mathcal H^1(\partial^* \mathbf E) 
+						\le \mathcal H^1(\partial \mathbf E)
+						\le \mathcal H^1(K)
+						\le \lim P(\mathbf E^n)
+						\le \lim P(\mathbf E)
+					$.
+					</p>
+
+				</section>
+				<section>
+					<p><b>Remark.</b>
+						$\mathcal H^1(\partial \mathbf E \setminus \partial^* \mathbf E) = 0$
+						implies $P(\mathbf E) = \mathcal H^1(\partial \mathbf E)$
+						but does not imply $P(E_k) = \mathcal H^1(\partial E_k)$ for all $k$.
+						Not even in a finite cluster:
+					</p>
+					<img src="cantor.png"
+						height="300"
+						style="filter: invert(1);"
+						>
 				</section>
 				<section>
 					<h4>
