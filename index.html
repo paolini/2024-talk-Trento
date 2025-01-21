@@ -33,14 +33,43 @@
 					<h4>[E. Paolini: Università di Pisa]</h4>
 					<h4></h4>
 					<h3>Trento &dash; Feb 28, 2023</h3>
+					<div style="position: absolute; top: 100px; right: -100px; margin: 10px; padding-left: 16px; padding-right: 6px; background-color: white; border-radius: 10px;" >
+							<div data-href="https://paolini.github.io/2024-talk-Trento" id="qrcode"></div>
+					</div>
+					<p class="center">
+						<a href="https://github.com/paolini/2024-talk-Trento">
+							<img src="github.svg" witdh="25" height="25" style="filter: invert(1); position: relative; top: 5px; margin-right: 5px">
+						</a>
+						<small><i><a href="https://paolini.github.io/2024-talk-Trento">paolini.github.io/2024-talk-Trento</a></i></small>
+					</p>
 				</section>
 				<section>
-				<h4>Plan</h4>
-					<ul>
-						<li>the classical Steiner Problem</li>
-						<li>generalization to infinite sets</li>
-						<li>minimality of the infinite self-similar complete binary tree</li>
-					</ul>
+				<h4>Partition of the talk</h4>
+					<ol style="margin-right: 300px">
+						<li>
+							<b>infinite isoperimetric clusters</b><br>
+							<small>(M. Novaga - E. P. - E. Stepanov - V. M. Tortorelli)<br>
+							published on <i>networks and heterogeneous media</i></small>
+							<img 
+								style="position: absolute; top: 10px; right: 100px; filter: invert(1);"
+								src="Apollonian_gasket.svg" 
+								height=150
+							>
+						</li>
+						<li>
+							<b>locally isoperimetric partitions</b><br>
+							<small>(M. Novaga - E. P. - V. M. Tortorelli)<br>
+							to appear on <i>transactions of the AMS</i></small>
+							<img style="position: absolute; top: 140px; right: -80px;" src="peanut.png" height=150>
+						</li>
+						<li>
+							<b>periodic isoperimetric tilings</b><br />
+						    <small>(M. Novaga - F. Nobili - E. P.)<br>
+							in preparation
+							</small>
+							<img style="position: absolute; top: 300px; right: 10px;" src="tiling.png" height=150>
+						</li>
+					</ol>
 				</section>
 				<section>
 					<h4>
@@ -91,6 +120,12 @@
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
 			});
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script type="text/javascript">
+			var element = document.getElementById("qrcode");
+			var href = element.dataset.href || element.parentElement.href;
+			new QRCode(element, {text: href, width: 200, height: 200, colorDark: "#111", colorLight: "#fff", correctLevel: QRCode.CorrectLevel.L});
 		</script>
 	</body>
 </html>
