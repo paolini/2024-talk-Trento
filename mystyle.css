@@ -13,3 +13,7 @@ i { font-style: oblique; color: rgb(189, 252, 209)}
     justify-content: center;
     align-items: center;
 }
+
+.middle {
+    vertical-align: middle;
+}

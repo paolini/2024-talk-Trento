@@ -26,8 +26,9 @@
 		convert prova.png \( -clone 0 -fill "#a010101" -colorize 100 \) \( -clone 0,1 -compose difference -composite -separate +channel -evaluate-sequence max -auto-level \) -delete 1 -alpha off -compose over -compose copy_opacity -composite out.png
 		-->
 		<div class="reveal">
+			<small id="clock" style="position: absolute;left:1em;bottom:1em;">--:--</small>
 			<div class="slides">
-				<section>
+				<section id="title_slide">
 					<h2><b>infinite <br> isoperimetric <br> partitions</b></h2>
 					<h4></h4>
 					<h4>[E. Paolini: Università di Pisa]</h4>
@@ -44,39 +45,47 @@
 					</p>
 				</section>
 				<section>
-				<h4>Plan</h4>
+				<h4 data-state="plan">Plan</h4>
 					<ol style="margin-right: 300px">
 						<li>
 							<b>infinite isoperimetric clusters</b><br>
-							<small>(M. Novaga - E. P. - E. Stepanov - V. M. Tortorelli)<br>
-							published on <i>networks and heterogeneous media</i></small>
+							[<small>Novaga - P. - Stepanov - Tortorelli<br>
+							 <i>networks and heterogeneous media</i> 2023</small>]
 							<img 
-								style="position: absolute; top: 10px; right: 100px; filter_: invert(1);"
+								style="position: absolute; top: -10px; right: 100px; filter_: invert(1);"
 								src="Apollonian_gasket.svg" 
 								height=150
 							>
 						</li>
 						<li>
 							<b>locally isoperimetric partitions</b><br>
-							<small>(M. Novaga - E. P. - V. M. Tortorelli)<br>
-							to appear on <i>transactions of the AMS</i></small>
-							<img style="position: absolute; top: 140px; right: -80px;" src="peanut.png" height=150>
+							[<small>Novaga - P. - Tortorelli<br>
+							to appear on <i>transactions of the AMS</i></small>]
+							<img style="position: absolute; top: 140px; right: -150px;" src="peanut.png" height=150>
 						</li>
 						<li>
 							<b>periodic isoperimetric tilings</b><br />
-						    <small>(M. Novaga - F. Nobili - E. P.)<br>
+						    [<small>Novaga - Nobili - P.<br>
 							in preparation
-							</small>
+							</small>]
 							<img style="position: absolute; top: 300px; right: 10px;" src="tiling.png" height=150>
 						</li>
 					</ol>
 				</section>
+
+<!-- 
+				 ____            _      ___             
+				|  _ \ __ _ _ __| |_   / _ \ _ __   ___ 
+				| |_) / _` | '__| __| | | | | '_ \ / _ \
+				|  __/ (_| | |  | |_  | |_| | | | |  __/
+				|_|   \__,_|_|   \__|  \___/|_| |_|\___|				
+-->
+
 				<section>
 					<h3><b>Part 1.</b><br>infinite isoperimetric clusters</h3>
-					<small>
-						(M. Novaga - E. P. - E. Stepanov - V. M. Tortorelli)<br>
-						published on <i>networks and heterogeneous media</i>
-					</small>
+					[<small>
+						Novaga - P. - Stepanov - Tortorelli<br>
+						2023 <i>networks and heterogeneous media</i></small>]
 					<img 
 						style="position:absolute;right: -50px;bottom:-50px;"
 						src="Apollonian_gasket.svg" 
@@ -150,10 +159,125 @@
 						style="filter: invert(1);"
 						>
 				</section>
+<!--
+					____            _     _____               
+					|  _ \ __ _ _ __| |_  |_   _|_      _____  
+					| |_) / _` | '__| __|   | | \ \ /\ / / _ \ 
+					|  __/ (_| | |  | |_    | |  \ V  V / (_) |
+					|_|   \__,_|_|   \__|   |_|   \_/\_/ \___/ 				
+-->
 				<section>
-					<h4>
-						Images
-					</h4>
+					<h3><b>Part 2.</b><br>locally isoperimetric partitions</h3>
+					<p>
+						$\mathbf E = (E_1,\dots,E_N)$ is a partition of $\mathbb R^d$.
+						Find $\mathbf E$ minimizing $P(\mathbf E, \Omega)$ 
+						on every bounded $\Omega$ with $\lvert E_k \rvert$ fixed,
+						but possibly $\infty$.
+					</p>
+					<img src="peanut.png" height=150>
+					<p>
+						[<small>Alama - Bronsard - Vriend<br>to appear on: <i>Transactions of the AMS</i> </small>]
+					</p>
+				</section>
+				<section>
+					<h3>standard bubbles <br><span class="fragment">$\to$ standard partitions</span></h3>
+					<p>double bubble:
+						<img class="middle" src="double.png" width=100>
+						<span class="fragment"> $\to$
+							<img class="middle" src="lens.png" width=100>
+							lens partition
+						</span>
+					<br>
+						triple bubble:
+						<img class="middle" src="triple.png" width=100>
+						<span class="fragment"> $\to$
+							<img class="middle" src="peanut.png" width=100>
+							peanut partition
+						</span>
+					<br>
+						triple bubble:
+						<img class="middle" src="reauleaux-bubble.png" width="100">
+						<span class="fragment">
+							$\to$
+							<img class="middle" src="reauleaux-partition.png" width="100">
+							reauleaux partition
+						</span>
+					</p>
+					<p>
+						[<small>Foisy et al.<br><i>Pacific J. Math.</i> 1993</small>]
+						[<small>Wichiramala<br><i>J. Reine Angew. Math</i> 2004</small>]
+						</p>
+				</section>
+				<section>
+					<h3>Higer dimensions</h3>
+					<p>double bubble:
+						<img class="middle" src="double-3d.png" width=100>
+						<span class="fragment"> $\to$
+							<img class="middle" src="lens-3d.png" width=100>
+							lens partition
+						</span>
+					<br>
+						triple bubble:
+						<img class="middle" src="triple-3d.png" width=100>
+						<span class="fragment"> $\to$
+							<img class="middle" src="peanut-3d.png" width=100>
+							peanut partition
+						</span>
+					<br>
+					<div class="fragment">
+						triple bubble:
+						<img class="middle" src="triple-3d.png" width="100">
+						<span>
+							$\to$
+							<img class="middle" src="nut-3d.png" width="100">
+							Brazil nut partition
+						</span>						
+					</div>
+					</p>
+					<p>
+						[<small>Hutchings - Morgan - Ritoré<br><i>Annals of Math.</i> 2002</small>]
+						[<small>Reichardt<br>J. Geom. Anal. 2008</small>]
+						[<small>Milman - Neeman<br/>to appear: <i>acta mathematica</i></small>]
+					</p>
+				</section>
+				<section>
+					<h5>$J$-isoperimetric partitions</h5>
+					<p>
+						$\mathbf E$ minimizes $P(\mathbf E, \Omega)$
+						with fixed $\lvert E_j\cap \Omega\rvert$
+						for all $j\in J \subset (1,2,\dots, N)$.
+					</p>
+					<p>
+						<b>Theorem.</b>
+						$J$-isoperimetric partitions are closed with 
+						respect to $L^1_{\text{loc}}$ convergence.
+					</p>
+					<p class="r-stack">
+						<span><b>Theorem.</b> $J$-isoperimetric partitions are locally 
+							isoperimetric 
+							<span>if their boundary is flat at infinity.</span>
+							<span style="display:none">if $d\le 7$</span>
+						</span>
+						<span class="fragment">
+							<b>Theorem.</b> $J$-isoperimetric partitions are locally 
+							isoperimetric 
+							<span style="text-decoration: line-through;">if their boundary is flat at infinity</span>
+							if $d\le 7$.
+						</span>
+					</p>
+					<p>
+						[<small>Novaga - P. - Tortorelli<br>to appear on: <i>Transactions of the AMS</i></small>]
+					</p>
+				</section>
+				<section>
+					<h3>problem</h3>
+					<p>
+						Locally isoperimetric partitions allow the exchange of any 
+						volume between infinite regions whereas $J$-isoperimetric
+						don't.
+					</p>
+				</section>
+				<section>
 					<div class="r-stack">
 						<img src="slide1.png">
 						<img class="fragment" src="slide2.png">
@@ -195,16 +319,49 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+				view: 'scroll',
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
 			});
+
+			function display_timer(minutes,seconds) {
+				document.getElementById("clock").textContent = 
+					minutes+":"+(""+seconds).padStart(2,"0");
+			}
+
+			(function () {
+				let timer_start = null;
+				setInterval(function (){
+					if (timer_start !== null) {
+						let t = Math.floor((new Date() - timer_start)/1000);
+						const seconds = t%60;
+						const minutes = Math.floor(t/60);
+						display_timer(minutes, seconds);
+					}
+				}, 1000);
+				Reveal.on('slidetransitionend', function(event) {
+					console.log("new slide", event);
+					if (event.previousSlide.id == "title_slide") {
+						timer_start = new Date();
+					}
+				})
+				Reveal.on('slidetransitionend', function(event) {
+					console.log("new slide", event);
+					if (event.currentSlide.id == "title_slide") {
+						timer_start = null;
+						display_timer("--","--");
+					}
+				})
+			})()
+
+			Reveal.on('ready', (event) => {console.log("ready", event)});
 		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script type="text/javascript">
 			var element = document.getElementById("qrcode");
 			var href = element.dataset.href || element.parentElement.href;
 			new QRCode(element, {text: href, width: 200, height: 200, colorDark: "#111", colorLight: "#fff", correctLevel: QRCode.CorrectLevel.L});
+
 		</script>
 	</body>
 </html>

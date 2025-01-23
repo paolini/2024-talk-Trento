@@ -12,7 +12,6 @@ import Deck, { VERSION } from './reveal.js'
  */
 let Reveal = Deck;
 
-
 /**
  * The below is a thin shell that mimics the pre 4.0
  * reveal.js API and ensures backwards compatibility.
