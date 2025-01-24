@@ -2,6 +2,10 @@
 
 b { color: rgb(255, 166, 0); }
 
+h4 { 
+    color: rgb(255, 166, 0) !important; 
+}
+
 .MathJax, .katex{ color: rgb(189 252 209); }
 
 li { padding-top: 0.5em; }

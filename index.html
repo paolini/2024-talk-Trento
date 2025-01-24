@@ -45,7 +45,7 @@
 					</p>
 				</section>
 				<section>
-				<h4 data-state="plan">Plan</h4>
+				<h3 data-state="plan">Plan</h3>
 					<ol style="margin-right: 300px">
 						<li>
 							<b>infinite isoperimetric clusters</b><br>
@@ -82,7 +82,8 @@
 -->
 
 				<section>
-					<h3><b>Part 1.</b><br>infinite isoperimetric clusters</h3>
+					<h3>Part 1.</h3>
+					<h4>infinite isoperimetric clusters</h4>
 					[<small>
 						Novaga - P. - Stepanov - Tortorelli<br>
 						2023 <i>networks and heterogeneous media</i></small>]
@@ -99,7 +100,7 @@
 					</p>
 				</section>
 				<section>
-					<h3>boundary of an infinite cluster</h3>
+					<h4>boundary of an infinite cluster</h4>
 					<p>
 						$$\begin{aligned}
 							\mathbf{E} 
@@ -167,7 +168,8 @@
 					|_|   \__,_|_|   \__|   |_|   \_/\_/ \___/ 				
 -->
 				<section>
-					<h3><b>Part 2.</b><br>locally isoperimetric partitions</h3>
+					<h3>Part 2.</h3>
+					<h4>locally isoperimetric partitions</h4>
 					<p>
 						$\mathbf E = (E_1,\dots,E_N)$ is a partition of $\mathbb R^d$.
 						Find $\mathbf E$ minimizing $P(\mathbf E, \Omega)$ 
@@ -180,7 +182,7 @@
 					</p>
 				</section>
 				<section>
-					<h3>standard bubbles <br><span class="fragment">$\to$ standard partitions</span></h3>
+					<h4>standard bubbles <br><span class="fragment">$\to$ standard partitions</span></h4>
 					<p>double bubble:
 						<img class="middle" src="double.png" width=100>
 						<span class="fragment"> $\to$
@@ -209,7 +211,7 @@
 						</p>
 				</section>
 				<section>
-					<h3>Higer dimensions</h3>
+					<h4>Higer dimensions</h4>
 					<p>double bubble:
 						<img class="middle" src="double-3d.png" width=100>
 						<span class="fragment"> $\to$
@@ -241,7 +243,7 @@
 					</p>
 				</section>
 				<section>
-					<h5>$J$-isoperimetric partitions</h5>
+					<h4>$J$-isoperimetric partitions</h4>
 					<p>
 						$\mathbf E$ minimizes $P(\mathbf E, \Omega)$
 						with fixed $\lvert E_j\cap \Omega\rvert$
@@ -252,58 +254,79 @@
 						$J$-isoperimetric partitions are closed with 
 						respect to $L^1_{\text{loc}}$ convergence.
 					</p>
-					<p class="r-stack">
+					<p>
 						<span><b>Theorem.</b> $J$-isoperimetric partitions are locally 
-							isoperimetric 
-							<span>if their boundary is flat at infinity.</span>
-							<span style="display:none">if $d\le 7$</span>
-						</span>
-						<span class="fragment">
-							<b>Theorem.</b> $J$-isoperimetric partitions are locally 
-							isoperimetric 
-							<span style="text-decoration: line-through;">if their boundary is flat at infinity</span>
-							if $d\le 7$.
+							isoperimetric if their boundary is flat at infinity<br>
+							<span class="fragment" data-fragment-index=1>($d\le 7$)</span>
 						</span>
 					</p>
 					<p>
 						[<small>Novaga - P. - Tortorelli<br>to appear on: <i>Transactions of the AMS</i></small>]
+						<span class="fragment" data-fragment-index=1>[<small>Bronsard - Novack<br><i>arXiv</i> 2024</small>]</span>
 					</p>
 				</section>
 				<section>
-					<h3>problem</h3>
+					<h4>different notions of minimality</h4>
 					<p>
 						Locally isoperimetric partitions allow the exchange of any 
-						volume between infinite regions whereas $J$-isoperimetric
-						don't.
+						volume between infinite regions whereas <br> $J$-isoperimetric
+						partitions don't.
+						<br>
+						<span class="fragment">
+							👉 Large exchange of volumes is required to pass from one notion to the other. 
+						</span>
 					</p>
 				</section>
 				<section>
-					<div class="r-stack">
-						<img src="slide1.png">
-						<img class="fragment" src="slide2.png">
-					</div>
+					<h4>future plans</h4>
+					<p>
+						Show that in $\mathbb R^8$ there exists a locally isoperimetric partition 
+						with <b>one finite</b> region and <b>two infinite</b> regions which 
+						coincides with the <b>Simon's cone</b> at infinity.
+					</p>
+					<p class="center">
+						<img src="simon.png" height=200>
+					</p>
 				</section>
+<!--
+				                 _     _   _                   
+				_ __   __ _ _ __| |_  | |_| |__  _ __ ___  ___ 
+			   | '_ \ / _` | '__| __| | __| '_ \| '__/ _ \/ _ \
+			   | |_) | (_| | |  | |_  | |_| | | | | |  __/  __/
+			   | .__/ \__,_|_|   \__|  \__|_| |_|_|  \___|\___|
+			   |_|                                             
+-->
+
 				<section>
-					<h4>Images</h4>
-					<img height="200" src="image.png">
-					<div>
-						(a)
-						<img style="vertical-align: middle;" class="fragment" height="200" src="slide1.png">
-						&nbsp;
-						&nbsp;
-						(b)
-						<img style="vertical-align: middle;" class="fragment" height="200" src="slide2.png">
-						&nbsp;
-						&nbsp;
-						(c)
-						<img style="vertical-align: middle;" class="fragment" height="200" src="slide3.png">
-					</div>
+					<h3>Part 3.</h3> 
+					<h4>periodic isoperimetric double-tilings</h4>
+					<p>
+						$G$ discrete subgroup of $\mathbb R^2$ (lattice).<br>
+						$\displaystyle \mathbf E = \bigcup_{g\in G}\{E_1+g,E_2+g\}
+						$ partition of $\mathbb R^d$.
+						minimize $\frac 1 2 (P(E_1)+P(E_2))$ 
+						with $\lvert E_1 \rvert$ and $\lvert E_2\rvert$ fixed.
+						Alternative: $G$ can be variable or fixed.
+					</p>
+					<img src="tiling.png" height=150 
+						style="position: absolute; left: 350px; bottom: -100px;">
+					<p>
+					[<small>Novaga - Nobili - P.<br><i>in preparation</i></small>]
+					</p>
 				</section>
+
 				<section>
-					<img class="center" src="tree.png" height=500>
-					<div class="fragment">
-						<b>thank you!</b>
-					</div>
+				<img style="filter_: invert(1);"
+					src="Apollonian_gasket.svg" 
+					height=150>
+				<span style="margin: 3em;"></span>
+				<img src="peanut.png" height=150>
+				<br>
+				<div class="fragment">
+					<b>thank you!</b>
+				</div>
+				<img src="tiling.png" height=150>
+	
 				</section>
 			</div>
 		</div>
