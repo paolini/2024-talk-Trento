@@ -65,8 +65,8 @@
 						</li>
 						<li>
 							<b>periodic isoperimetric tilings</b><br />
-						    [<small>Novaga - Nobili - P.<br>
-							in preparation
+						    [<small>Nobili - Novaga - P.<br>
+							draft
 							</small>]
 							<img style="position: absolute; top: 300px; right: 10px;" src="tiling.png" height=150>
 						</li>
@@ -304,43 +304,63 @@
 						$G$ discrete subgroup of $\mathbb R^2$ (lattice).<br>
 						$\displaystyle \mathbf E = \bigcup_{g\in G}\{E_1+g,E_2+g\}
 						$ partition of $\mathbb R^d$.
-						minimize $\frac 1 2 (P(E_1)+P(E_2))$ 
+						minimize $P(E_1)+P(E_2)$ 
 						with $\lvert E_1 \rvert$ and $\lvert E_2\rvert$ fixed.
-						Alternative: $G$ can be variable or fixed.
 					</p>
 					<img src="tiling.png" height=150 
 						style="position: absolute; left: 350px; bottom: -100px;">
 					<p>
-					[<small>Novaga - Nobili - P.<br><i>in preparation</i></small>]
+					[<small>Nobili - Novaga - P.<br><i>draft</i></small>]
 					</p>
 				</section>
-
 				<section>
-				<div class="slideshow" style="position: relative; height: 300px; display: flex; justify-content: center; align-items: center;">
+					<h4>Existence and regularity</h4>
+					<p>
+						Minimizers <b>exist</b> and enjoy the same local 
+						<b>regularity</b> properties of isoperimetric clusters. 
+						<ul>
+							<li>Fixed or variable lattice $G$.</li>
+							<li>Any dimension, any number of tiles, general notion of perimeter.</li>
+							<li>Characterization for $N$-tilings in $\mathbb R^2$ with almost equal volumes.</li>
+						</ul>
+						[<small>Nobili - Novaga<br><i>arXiv</i> 2024</small>]
+					</p>
+				</section>
+				<section>
+					<h4>isoperimetric $2$-tilings in the plane</h4>
+					<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 10px;">
+						<div style="display: flex; justify-content: center; align-items: center;">
+							<img class="middle" src="general39tiling.png" height="180px">
+							<img class="middle" src="general39tiles.png" height="100px">
+						</div>
+						<div class="fragment" style="display: flex; justify-content: center; align-items: center;">
+							<img class="middle" src="general48tiling.png" height="180px">
+							<img class="middle" src="general48tiles.png" height="100px">
+						</div>	
+						<div class="fragment" style="display: flex; justify-content: center; align-items: center;">
+							<img class="middle" src="general66tiling.png" height="180px">
+							<img class="middle" src="general66tiles.png" height="100px">
+						</div>
+						<div style="display: flex; justify-content: center; align-items: center;">
+							[<small>Nobili - Novaga - Paolini<br><i>draft</i></small>]
+						</div>
+						</div>
+			</section>
+			<section>
+				<h4>isoperimetric profile</h4>
+				<img src="profile.png" height=600>
+			</section>
+			<section>
+				<!--div class="slideshow" style="position: relative; height: 300px; display: flex; justify-content: center; align-items: center;">
 					<img class="slide" height=300 src="Apollonian_gasket.svg" style="position: absolute; opacity: 1; margin: auto;">
 					<img class="slide" height=300 src="peanut.png" style="position: absolute; opacity: 0; margin: auto;">
 					<img class="slide" height=300 src="tiling.png" style="position: absolute; opacity: 0; margin: auto;">
-				</div>
-
-				<script>
-					document.addEventListener('DOMContentLoaded', function() {
-						let slides = document.querySelectorAll('.slideshow .slide');
-						let currentSlide = 0;
-
-						setInterval(function() {
-							slides[currentSlide].style.transition = 'opacity 1s';
-							slides[currentSlide].style.opacity = '0';
-							currentSlide = (currentSlide + 1) % slides.length;
-							slides[currentSlide].style.transition = 'opacity 1s';
-							slides[currentSlide].style.opacity = '1';
-						}, 3000);
-					});
-				</script>
+				</div-->
 				<br>
 				<div class="fragment">
 					<b>thank you!</b>
 				</div>	
-				</section>
+			</section>
 			</div>
 		</div>
 
@@ -398,6 +418,20 @@
 			var href = element.dataset.href || element.parentElement.href;
 			new QRCode(element, {text: href, width: 200, height: 200, colorDark: "#111", colorLight: "#fff", correctLevel: QRCode.CorrectLevel.L});
 
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				let slides = document.querySelectorAll('.slideshow .slide');
+				let currentSlide = 0;
+
+				setInterval(function() {
+					slides[currentSlide].style.transition = 'opacity 1s';
+					slides[currentSlide].style.opacity = '0';
+					currentSlide = (currentSlide + 1) % slides.length;
+					slides[currentSlide].style.transition = 'opacity 1s';
+					slides[currentSlide].style.opacity = '1';
+				}, 5000);
+			});
 		</script>
 	</body>
 </html>
