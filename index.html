@@ -316,17 +316,30 @@
 				</section>
 
 				<section>
-				<img style="filter_: invert(1);"
-					src="Apollonian_gasket.svg" 
-					height=150>
-				<span style="margin: 3em;"></span>
-				<img src="peanut.png" height=150>
+				<div class="slideshow" style="position: relative; height: 300px; display: flex; justify-content: center; align-items: center;">
+					<img class="slide" height=300 src="Apollonian_gasket.svg" style="position: absolute; opacity: 1; margin: auto;">
+					<img class="slide" height=300 src="peanut.png" style="position: absolute; opacity: 0; margin: auto;">
+					<img class="slide" height=300 src="tiling.png" style="position: absolute; opacity: 0; margin: auto;">
+				</div>
+
+				<script>
+					document.addEventListener('DOMContentLoaded', function() {
+						let slides = document.querySelectorAll('.slideshow .slide');
+						let currentSlide = 0;
+
+						setInterval(function() {
+							slides[currentSlide].style.transition = 'opacity 1s';
+							slides[currentSlide].style.opacity = '0';
+							currentSlide = (currentSlide + 1) % slides.length;
+							slides[currentSlide].style.transition = 'opacity 1s';
+							slides[currentSlide].style.opacity = '1';
+						}, 3000);
+					});
+				</script>
 				<br>
 				<div class="fragment">
 					<b>thank you!</b>
-				</div>
-				<img src="tiling.png" height=150>
-	
+				</div>	
 				</section>
 			</div>
 		</div>
