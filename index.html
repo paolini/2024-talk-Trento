@@ -49,8 +49,7 @@
 					<ol style="margin-right: 300px">
 						<li>
 							<b>infinite isoperimetric clusters</b><br>
-							[<small>Novaga - P. - Stepanov - Tortorelli<br>
-							 <i>networks and heterogeneous media</i> 2023</small>]
+							<small>[Novaga - P. - Stepanov - Tortorelli]</small>
 							<img 
 								style="position: absolute; top: 50px; right: 100px; filter_: invert(1);"
 								src="Apollonian_gasket.svg" 
@@ -59,15 +58,12 @@
 						</li>
 						<li>
 							<b>locally isoperimetric partitions</b><br>
-							[<small>Novaga - P. - Tortorelli<br>
-							to appear on <i>transactions of the AMS</i></small>]
+							<small>[Novaga - P. - Tortorelli]</small>
 							<img style="position: absolute; top: 200px; right: -300px;" src="peanut.png" height=150>
 						</li>
 						<li>
 							<b>periodic isoperimetric tilings</b><br />
-						    [<small>Nobili - Novaga - P.<br>
-							draft
-							</small>]
+						    <small>[Nobili - Novaga - P.]</small>
 							<img style="position: absolute; top: 400px; right: 10px;" src="tiling.png" height=150>
 						</li>
 					</ol>
@@ -84,22 +80,28 @@
 				<section>
 					<h3>Part 1.</h3>
 					<h4>infinite isoperimetric clusters</h4>
-					<img class="fragment" data-fragment="1"
-						style="position:absolute;right: -50px;bottom:-50px;"
-						src="Apollonian_gasket.svg" 
-						height=300
-					>
-					<img class="fragment" data-fragment="2" 
-						style="position:absolute;right: -50px;bottom:-51px" 
-						src="squares.png"
-						height="304"
-						>
 					<p>
 						minimize $\displaystyle P(E)= \frac 1 2 \sum_{k=0}^{+\infty} P(E_k)$
 					</p>
 					<p>
-						with fixed $\lvert E_k \rvert$, $k>0$
+						with fixed $\lvert E_k \rvert$, $\displaystyle\sum_{k=1}^{+\infty} \lvert E_k\vert \lt +\infty$
 					</p>
+					<p class="fragment" data-fragment="1">
+						Concentration compactness?
+						<br><br>
+						[<small>Novaga - Paolini - Stepanov - Tortorelli<br>
+							<i>J. Geom. Anal.</i> 2022</small>]
+					</p>
+					<img class="fragment" data-fragment="2"
+						style="position:absolute;right: -50px;bottom:-50px;"
+						src="Apollonian_gasket.svg" 
+						height=300
+					>
+					<img class="fragment" data-fragment="3" 
+						style="position:absolute;right: -50px;bottom:-51px" 
+						src="squares.png"
+						height="304"
+						>
 				</section>
 				<section>
 					<h4>boundary of an infinite cluster</h4>
@@ -116,8 +118,10 @@
 								\forall \rho\, \exists k\colon
 								0 \lt \lvert E_k\cap B_\rho(x)\rvert \lt \lvert B_\rho(x)\rvert 
 								\right\}\\
-							P(\mathbf E) &= \mathcal{H}^{d-1}(\partial^* \mathbf E)
-						\end{aligned}$$
+							\end{aligned}$$
+							</p>
+					<p><b>Lemma:</b>
+						$P(\mathbf E) = \mathcal{H}^{d-1}(\partial^* \mathbf E)$
 					</p>
 				</section>
 				<section>
@@ -125,6 +129,10 @@
 					Given $a_k\gt 0$, $k=1,2,\dots$ such that $\sum \sqrt {a_k} \lt \infty$,
 					there exists a minimal cluster $\mathbf E$ in $\mathbb R^2$ with $\lvert E_k\rvert = a_k$.
 					Moreover $\mathcal H^1(\partial \mathbf E \setminus \partial^* \mathbf E) = 0$.
+					</p>
+					<p>
+					[<small>Novaga - P. - Stepanov - Tortorelli<br>
+					<i>networks and heterogeneous media</i> 2023</small>]
 					</p>
 				</section>
 				<section>
@@ -178,7 +186,7 @@
 						on every bounded $\Omega$ with $\lvert E_k \rvert$ fixed,
 						but possibly $\infty$.
 					</p>
-					<img src="peanut.png" height=150>
+					<img src="lens.png" height=150>
 					<p>
 						[<small>Alama - Bronsard - Vriend<br>to appear on: <i>Transactions of the AMS</i> </small>]
 					</p>
